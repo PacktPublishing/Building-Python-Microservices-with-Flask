@@ -1,0 +1,8 @@
+<!DOCTYPE HTML>
+<title>A fun greeting application</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% if surname %}
+  <h1 style="text-align:center">Hello {{name }} {{surname}}</h1>
+{% else %}
+  <h1 style="text-align:center">Hello {{name}}</h1>
+{% endif %}
